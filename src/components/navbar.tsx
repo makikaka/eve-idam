@@ -6,7 +6,7 @@ import LogoOutlined from './LogoOutlined';
 
 const Navbar = () => {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState('events');
+  const [activeTab, setActiveTab] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const tabs = [
