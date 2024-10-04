@@ -20,7 +20,7 @@ const eventTags = [
 
 interface Props {
   filters: EventFilters;
-  setFilters: React.Dispatch<React.SetStateAction<EventFilters>>;
+  setFilters: (newFilters: EventFilters) => void;
 }
 
 const EventsPageFilters: React.FC<Props> = ({ filters, setFilters }) => {
@@ -93,7 +93,7 @@ const EventsPageFilters: React.FC<Props> = ({ filters, setFilters }) => {
               setIsWeekendSelected(false);
             }}
             className={`appearance-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-sm leading-5 focus:outline-none focus:ring-2 focus:ring-black focus:border-black transition duration-150 ease-in-out text-gray-900 ${filters.isWeekendSelected ? 'opacity-50 cursor-not-allowed' : ''}`}
-            disabled={filters.isWeekendSelected}
+            disabled={false}
           />
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
             <FaCalendar className="h-4 w-4" />
