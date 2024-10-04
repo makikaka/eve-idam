@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import clientPromise from '../../../lib/mongodb';
 
+import { setTimeout } from 'timers/promises';
+
 export async function GET(req: Request) {
   try {
 

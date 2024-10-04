@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Event } from "../../types/Event";
+import { Event } from "../../../types/Event";
 import { EventFilters } from '@/types/EventFilters';
-import EventListDisplay from './EventListDisplay';
+import EventListDisplay from '../EventListDisplay';
+import EventSkeletonLoader from '@/components/loaders/event-skeleton-loader';
 
 interface Props {
   filters: EventFilters;
@@ -10,9 +11,11 @@ interface Props {
 
 const EventsList: React.FC<Props> = ({ filters }) => {
   const [events, setEvents] = useState<Event[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchEvents = async () => {
+      setIsLoading(true);
       try {
         // Construct the query parameters from the filters
         const params = new URLSearchParams();
@@ -26,12 +29,17 @@ const EventsList: React.FC<Props> = ({ filters }) => {
         setEvents(data);
       } catch (error) {
         console.error('Error fetching events:', error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
     fetchEvents(); // Fetch events on filter change
   }, [filters]); // Run on filter changes
 
+  if (isLoading) {
+    return <EventSkeletonLoader numberOfCards={events?.length}/>;
+  }
 
   return (
     <EventListDisplay events={events}></EventListDisplay>
