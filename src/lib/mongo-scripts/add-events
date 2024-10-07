@@ -2,7 +2,7 @@ db.events.insertMany([
   {
     id: 1,
     name: "Ноќ на рок легендите",
-    date: "2024-10-08",
+    date: new Date("2024-10-08"),
     location: "Хавана, Скопје",
     city: "Скопје",
     tags: ['Live Music', 'Nights Out'],
@@ -12,7 +12,7 @@ db.events.insertMany([
   {
     id: 2,
     name: "Фестивал на виното",
-    date: "2024-10-09",
+    date: new Date("2024-10-09"),
     location: "Сити Парк, Скопје",
     city: "Скопје",
     tags: ['Food Festival', 'Nights Out'],
@@ -22,7 +22,7 @@ db.events.insertMany([
   {
     id: 3,
     name: "Театарска претстава 'Сон на летната ноќ'",
-    date: "2024-10-10",
+    date: new Date("2024-10-10"),
     location: "МНТ, Скопје",
     city: "Скопје",
     tags: ['Theater', 'Nights Out'],
@@ -32,7 +32,7 @@ db.events.insertMany([
   {
     id: 4,
     name: "Електронска журка под ѕвездите",
-    date: "2024-10-11",
+    date: new Date("2024-10-11"),
     location: "Плажа Градиште, Охрид",
     city: "Охрид",
     tags: ['Clubbing', 'Nights Out'],
@@ -42,7 +42,7 @@ db.events.insertMany([
   {
     id: 5,
     name: "Фестивал на уличната храна",
-    date: "2024-10-12",
+    date: new Date("2024-10-12"),
     location: "Широк Сокак, Битола",
     city: "Битола",
     tags: ['Food Festival'],
@@ -52,7 +52,7 @@ db.events.insertMany([
   {
     id: 6,
     name: "Концерт на филхармонија",
-    date: "2024-10-10",
+    date: new Date("2024-10-10"),
     location: "Антички театар, Охрид",
     city: "Охрид",
     tags: ['Live Music', 'Nights Out'],
@@ -62,7 +62,7 @@ db.events.insertMany([
   {
     id: 7,
     name: "Ноќ на музеите",
-    date: "2024-10-11",
+    date: new Date("2024-10-11"),
     location: "Музеј на современа уметност, Скопје",
     city: "Скопје",
     tags: ['Art Exhibition', 'Nights Out'],
@@ -72,7 +72,7 @@ db.events.insertMany([
   {
     id: 8,
     name: "Фестивал на пивото",
-    date: "2024-10-10",
+    date: new Date("2024-10-10"),
     location: "Градски парк, Скопје",
     city: "Скопје",
     tags: ['Food Festival', 'Nights Out'],
@@ -82,7 +82,7 @@ db.events.insertMany([
   {
     id: 9,
     name: "Охридско лето - отворање",
-    date: "2024-10-13",
+    date: new Date("2024-10-13"),
     location: "Самоилова тврдина, Охрид",
     city: "Охрид",
     tags: ['Live Music'],
@@ -91,8 +91,8 @@ db.events.insertMany([
   },
   {
     id: 10,
-    name: "Битолско културно лето",
-    date: "2024-10-08",
+    name: "Битолско кулурно лето",
+    date: new Date("2024-10-08"),
     location: "Центар, Битола",
     city: "Битола",
     tags: ['Live Music', 'Nights Out'],
@@ -102,7 +102,7 @@ db.events.insertMany([
   {
     id: 11,
     name: "Струмички карневал",
-    date: "2024-10-14",
+    date: new Date("2024-10-14"),
     location: "Центар, Струмица",
     city: "Струмица",
     tags: ['Nights Out', 'Theater'],
@@ -112,7 +112,7 @@ db.events.insertMany([
   {
     id: 12,
     name: "Вевчански карневал",
-    date: "2024-10-15",
+    date: new Date("2024-10-15"),
     location: "Вевчани",
     city: "Вевчани",
     tags: ['Nights Out', 'Theater'],
@@ -122,7 +122,7 @@ db.events.insertMany([
   {
     id: 13,
     name: "Џез фестивал",
-    date: "2024-10-16",
+    date: new Date("2024-10-16"),
     location: "Македонска опера и балет, Скопје",
     city: "Скопје",
     tags: ['Live Music'],
@@ -132,7 +132,7 @@ db.events.insertMany([
   {
     id: 14,
     name: "Фестивал на комедијата",
-    date: "2024-10-17",
+    date: new Date("2024-10-17"),
     location: "Драмски театар, Скопје",
     city: "Скопје",
     tags: ['Theater'],
@@ -142,7 +142,7 @@ db.events.insertMany([
   {
     id: 15,
     name: "Есенски базар на ракотворби",
-    date: "2024-10-18",
+    date: new Date("2024-10-18"),
     location: "Стара чаршија, Скопје",
     city: "Скопје",
     tags: ['Art Exhibition'],
@@ -152,7 +152,7 @@ db.events.insertMany([
   {
     id: 16,
     name: "Новогодишен концерт",
-    date: "2024-10-19",
+    date: new Date("2024-10-19"),
     location: "Плоштад Македонија, Скопје",
     city: "Скопје",
     tags: ['Live Music', 'Nights Out'],
@@ -162,7 +162,7 @@ db.events.insertMany([
   {
     id: 17,
     name: "Фестивал на класична музика",
-    date: "2024-10-20",
+    date: new Date("2024-10-20"),
     location: "Хераклеја, Битола",
     city: "Битола",
     tags: ['Live Music'],
@@ -172,7 +172,7 @@ db.events.insertMany([
   {
     id: 18,
     name: "Балканска вечер",
-    date: "2024-10-21",
+    date: new Date("2024-10-21"),
     location: "Кале, Скопје",
     city: "Скопје",
     tags: ['Live Music', 'Nights Out'],
@@ -182,7 +182,7 @@ db.events.insertMany([
   {
     id: 19,
     name: "Фолк фестивал",
-    date: "2024-10-22",
+    date: new Date("2024-10-22"),
     location: "Центар, Прилеп",
     city: "Прилеп",
     tags: ['Live Music'],
@@ -192,7 +192,7 @@ db.events.insertMany([
   {
     id: 20,
     name: "Галичка свадба",
-    date: "2024-10-23",
+    date: new Date("2024-10-23"),
     location: "Село Галичник",
     city: "Галичник",
     tags: ['Nights Out', 'Theater'],
@@ -210,7 +210,7 @@ db.events.insertMany([
     image: "https://picsum.photos/seed/event21/275/175"
   },
   {
-    id: 22,
+    id: 22, 
     name: "Турнир во 'Катан' - Борд игри предизвик",
     date: new Date("2024-10-09"),
     location: "Друштво за борд игри, Битола",
