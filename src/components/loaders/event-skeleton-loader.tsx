@@ -1,10 +1,10 @@
-import React from 'react';
-
 interface EventSkeletonLoaderProps {
   numberOfCards?: number;
 }
 
 const EventSkeletonLoader: React.FC<EventSkeletonLoaderProps> = ({ numberOfCards = 9 }) => {
+  if (numberOfCards === 0)
+    numberOfCards = 6 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
       {[...Array(numberOfCards)].map((_, index) => (
