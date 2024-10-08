@@ -20,12 +20,17 @@ const Navbar = () => {
     const path = window.location.pathname.substring(1);
     const tab = tabs.find(t => t.key === path);
     if (tab) {
+      console.log("TabKey: ", tab.key)
       setActiveTab(tab.key);
+    } else {
+      setActiveTab("")
     }
   }, []);
 
   const handleTabClick = (tabKey: string) => { // Specify type for tabKey
     setActiveTab(tabKey);
+    
+    console.log("TabKey: ", tabKey)
     router.push(`/${tabKey}`);
     setIsMenuOpen(false); // Close mobile menu after selection
   };

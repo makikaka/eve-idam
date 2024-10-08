@@ -17,6 +17,7 @@ export interface Venue extends BaseEntity {
 
 export interface Artist extends BaseEntity {
     genre: string;
+    city: string
     // Add other artist-specific fields
 }
 export type EntityType = 'events' | 'venues' | 'artists';

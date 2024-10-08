@@ -19,7 +19,6 @@ const EventsList: React.FC<Props> = ({ filters, entityType, EntityListDisplay })
     const fetchEvents = async () => {
       setIsLoading(true);
       try {
-        // Construct the query parameters from the filters
         const searchParams = new URLSearchParams();
         Object.entries(filters).forEach(([key, value]) => {
           if (value) {

@@ -12,8 +12,8 @@ const ArtistsListDisplay: React.FC<Props> = ({ entities: entities }) => {
     return (
         entities.length > 0 ?
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
-                {entities.map((event) => (
-                     <EntityCard key={event.id} image={event.image} location={event.location} name={event.name} />
+                {artists.map((event) => (
+                     <EntityCard city={event.city} key={event.id} image={event.image} location={event.location} name={event.name} />
                 ))}
             </div> : (
                 <div>

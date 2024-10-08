@@ -1,0 +1,186 @@
+db.venues.insertMany([
+  {
+    id: 1,
+    name: "Кафе 'Шарена џамија'",
+    city: "Тетово",
+    location: "Улица 'Илинденска' бр. 12",
+    tags: ['Cafes'],
+    image: "https://picsum.photos/seed/venue1/275/175"
+  },
+  {
+    id: 2,
+    name: "Клуб 'Колосеум'",
+    city: "Скопје",
+    location: "Улица 'Кирил и Методиј' бр. 23",
+    tags: ['Clubs'],
+    image: "https://picsum.photos/seed/venue2/275/175"
+  },
+  {
+    id: 3,
+    name: "Ресторан 'Охридска рибарница'",
+    city: "Охрид",
+    location: "Улица 'Кеј 'Александар Велики' бр. 15",
+    tags: ['Restaurants'],
+    image: "https://picsum.photos/seed/venue3/275/175"
+  },
+  {
+    id: 4,
+    name: "Бар 'Битолско сонце'",
+    city: "Битола",
+    location: "Улица 'Широк сокак' бр. 10",
+    tags: ['Bars'],
+    image: "https://picsum.photos/seed/venue4/275/175"
+  },
+  {
+    id: 5,
+    name: "Театар 'Македонско народно позориште'",
+    city: "Скопје",
+    location: "Улица 'Илинденска' бр. 3",
+    tags: ['Theaters'],
+    image: "https://picsum.photos/seed/venue5/275/175"
+  },
+  {
+    id: 6,
+    name: "Музеј 'Меморијален културен центар'",
+    city: "Струмица",
+    location: "Улица 'Благој Јанков Мучето' бр. 5",
+    tags: ['Museums'],
+    image: "https://picsum.photos/seed/venue6/275/175"
+  },
+  {
+    id: 7,
+    name: "Галерија 'Уметничка галерија'",
+    city: "Скопје",
+    location: "Улица 'Димитрија Чуповски' бр. 24",
+    tags: ['Galleries'],
+    image: "https://picsum.photos/seed/venue7/275/175"
+  },
+  {
+    id: 8,
+    name: "Парк 'Младински парк'",
+    city: "Велес",
+    location: "Улица 'Борис Кидрич' бр. 1",
+    tags: ['Parks'],
+    image: "https://picsum.photos/seed/venue8/275/175"
+  },
+  {
+    id: 9,
+    name: "Стадион 'Тумба Карпе'",
+    city: "Скопје",
+    location: "Улица 'Кирил и Методиј' бр. 50",
+    tags: ['Stadiums'],
+    image: "https://picsum.photos/seed/venue9/275/175"
+  },
+  {
+    id: 10,
+    name: "Концертна сала 'Филхармонија'",
+    city: "Скопје",
+    location: "Улица 'Максим Горки' бр. 10",
+    tags: ['Concert Halls'],
+    image: "https://picsum.photos/seed/venue10/275/175"
+  },
+  {
+    id: 11,
+    name: "Кино 'Милениум'",
+    city: "Велес",
+    location: "Улица 'Борис Кидрич' бр. 15",
+    tags: ['Cinemas'],
+    image: "https://picsum.photos/seed/venue11/275/175"
+  },
+  {
+    id: 12,
+    name: "Клуб за комедија 'Смешко'",
+    city: "Скопје",
+    location: "Улица 'Кирил и Методиј' бр. 20",
+    tags: ['Comedy Clubs'],
+    image: "https://picsum.photos/seed/venue12/275/175"
+  },
+  {
+    id: 13,
+    name: "Студио за танц 'Денс Студио'",
+    city: "Скопје",
+    location: "Улица 'Димитрија Чуповски' бр. 30",
+    tags: ['Dance Studios'],
+    image: "https://picsum.photos/seed/venue13/275/175"
+  },
+  {
+    id: 22,
+    name: "Бар 'Битолско пиво'",
+    city: "Битола",
+    location: "Улица 'Широк сокак' бр. 20",
+    tags: ['Bars'],
+    image: "https://picsum.photos/seed/venue22/275/175"
+  },
+  {
+    id: 23,
+    name: "Кафе 'Кафе на град'",
+    city: "Скопје",
+    location: "Улица 'Максим Горки' бр. 5",
+    tags: ['Cafes'],
+    image: "https://picsum.photos/seed/venue23/275/175"
+  },
+  {
+    id: 24,
+    name: "Клуб 'Клуб на пријателите'",
+    city: "Охрид",
+    location: "Улица 'Кеј 'Александар Велики' бр. 20",
+    tags: ['Clubs'],
+    image: "https://picsum.photos/seed/venue24/275/175"
+  },
+  {
+    id: 25,
+    name: "Спортски центар 'Спортско срце'",
+    city: "Велес",
+    location: "Улица 'Борис Кидрич' бр. 25",
+    tags: ['Sport'],
+    image: "https://picsum.photos/seed/venue25/275/175"
+  },
+  {
+    id: 26,
+    name: "Кафе 'Кафе на реката'",
+    city: "Струмица",
+    location: "Улица 'Благој Јанков Мучето' бр. 10",
+    tags: ['Cafes'],
+    image: "https://picsum.photos/seed/venue26/275/175"
+  },
+  {
+    id: 27,
+    name: "Бар 'Бар на плажа'",
+    city: "Охрид",
+    location: "Улица 'Кеј 'Александар Велики' бр. 30",
+    tags: ['Bars'],
+    image: "https://picsum.photos/seed/venue27/275/175"
+  },
+  {
+    id: 29,
+    name: "Спортски терен 'Спортски терен на пријателите'",
+    city: "Битола",
+    location: "Улица 'Широк сокак' бр. 30",
+    tags: ['Sport'],
+    image: "https://picsum.photos/seed/venue29/275/175"
+  },
+  {
+    id: 30,
+    name: "Кафе 'Кафе на планината'",
+    city: "Велес",
+    location: "Улица 'Борис Кидрич' бр. 35",
+    tags: ['Cafes'],
+    image: "https://picsum.photos/seed/venue30/275/175"
+  },
+  {
+    id: 31,
+    name: "Кафе 'Кафе на брегот'",
+    city: "Охрид",
+    location: "Улица 'Кеј 'Александар Велики' бр. 35",
+    tags: ['Cafes'],
+    image: "https://picsum.photos/seed/venue31/275/175"
+  },
+  {
+    id: 32,
+    name: "Бар 'Бар на брегот'",
+    city: "Охрид",
+    location: "Улица 'Кеј 'Александар Велики' бр. 40",
+    tags: ['Bars'],
+    image: "https://picsum.photos/seed/venue32/275/175"
+  }
+])

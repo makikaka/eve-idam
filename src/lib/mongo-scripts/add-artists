@@ -1,0 +1,142 @@
+db.artists.insertMany([
+  {
+    id: 1,
+    name: "Тоше Проески",
+    city: "Скопје",
+    tags: ['Pop', 'Rock', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist1/275/175"
+  },
+  {
+    id: 2,
+    name: "Каролина Гочева",
+    city: "Битола",
+    tags: ['Pop', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist2/275/175"
+  },
+  {
+    id: 3,
+    name: "Моја Лубојна",
+    city: "Охрид",
+    tags: ['Pop', 'Rock', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist3/275/175"
+  },
+  {
+    id: 4,
+    name: "Енди",
+    city: "Струмица",
+    tags: ['Pop', 'R&B', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist4/275/175"
+  },
+  {
+    id: 5,
+    name: "Даниел Кајмакоски",
+    city: "Прилеп",
+    tags: ['Pop', 'Rock', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist5/275/175"
+  },
+  {
+    id: 6,
+    name: "Тамара Тодевска",
+    city: "Куманово",
+    tags: ['Pop', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist6/275/175"
+  },
+  {
+    id: 7,
+    name: "Елена Ристеска",
+    city: "Тетово",
+    tags: ['Pop', 'R&B', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist7/275/175"
+  },
+  {
+    id: 8,
+    name: "Калиопи",
+    city: "Велес",
+    tags: ['Pop', 'Rock', 'Singer-Songwriter'],
+    image: "https://picsum.photos/seed/artist8/275/175"
+  },
+  {
+    id: 9,
+    name: "Киро",
+    city: "Скопје",
+    tags: ['Hip-Hop', 'R&B'],
+    image: "https://picsum.photos/seed/artist9/275/175"
+  },
+  {
+    id: 10,
+    name: "Сузанита",
+    city: "Битола",
+    tags: ['Folk', 'Dance'],
+    image: "https://picsum.photos/seed/artist10/275/175"
+  },
+  {
+    id: 11,
+    name: "Дарко Димитров",
+    city: "Охрид",
+    tags: ['Jazz', 'Rock'],
+    image: "https://picsum.photos/seed/artist11/275/175"
+  },
+  {
+    id: 12,
+    name: "Марија Шерифовиќ",
+    city: "Струмица",
+    tags: ['Pop', 'Dance'],
+    image: "https://picsum.photos/seed/artist12/275/175"
+  },
+  {
+    id: 13,
+    name: "Дани Милев",
+    city: "Прилеп",
+    tags: ['Rock', 'Pop'],
+    image: "https://picsum.photos/seed/artist13/275/175"
+  },
+  {
+    id: 14,
+    name: "Мартина Мајер",
+    city: "Куманово",
+    tags: ['Classical', 'Jazz'],
+    image: "https://picsum.photos/seed/artist14/275/175"
+  },
+  {
+    id: 17,
+    name: "Влатко Илевски",
+    city: "Битола",
+    tags: ['Rock', 'Pop'],
+    image: "https://picsum.photos/seed/artist17/275/175"
+  },
+  {
+    id: 23,
+    name: "Кокошка",
+    city: "Велес",
+    tags: ['Rock', 'Pop'],
+    image: "https://picsum.photos/seed/artist23/275/175"
+  },
+  {
+    id: 24,
+    name: "Срджан Јанковиќ",
+    city: "Скопје",
+    tags: ['Rock', 'Pop'],
+    image: "https://picsum.photos/seed/artist24/275/175"
+  },
+  {
+    id: 25,
+    name: "Андреј Жердевски",
+    city: "Битола",
+    tags: ['Rock', 'Pop'],
+    image: "https://picsum.photos/seed/artist25/275/175"
+  },
+  {
+    id: 26,
+    name: "Милан Митровски",
+    city: "Охрид",
+    tags: ['Rock', 'Pop'],
+    image: "https://picsum.photos/seed/artist26/275/175"
+  },
+  {
+    id: 27,
+    name: "Марко Лука",
+    city: "Струмица",
+    tags: ['Rock', 'Pop'],
+    image: "https://picsum.photos/seed/artist27/275/175"
+  }
+]);

@@ -8,10 +8,11 @@ interface CardProps {
   image: string;
   name: string;
   location: string;
+  city?: string; // Added city prop
   date?: string;
 }
 
-const Card: React.FC<CardProps> = ({ image, name, location, date }) => {
+const Card: React.FC<CardProps> = ({ image, name, location, city, date }) => {
   const formattedDate = date ? formatDate(new Date(date)) : null;
 
   return (
@@ -22,7 +23,7 @@ const Card: React.FC<CardProps> = ({ image, name, location, date }) => {
           {formattedDate && <span>{formattedDate}</span>}
           <span className="flex items-center">
             <FaMapMarkerAlt className="mr-1" />
-            {location}
+            {location ? location : city}
           </span>
         </div>
         <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
