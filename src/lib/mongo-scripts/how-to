@@ -1,0 +1,3 @@
+Install mongo locally.
+In mongosh create a db called eve-idam
+And paste the add-artists, add-venues, add-events there
