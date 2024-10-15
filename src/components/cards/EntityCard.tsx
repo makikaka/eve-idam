@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -8,15 +9,20 @@ interface CardProps {
   image: string;
   name: string;
   location: string;
-  city?: string; // Added city prop
+  city?: string;
   date?: string;
+  id: string;
+  onCardClick: (id: string) => void;
 }
 
-const Card: React.FC<CardProps> = ({ image, name, location, city, date }) => {
+const Card: React.FC<CardProps> = ({ image, name, location, city, date, id, onCardClick }) => {
   const formattedDate = date ? formatDate(new Date(date)) : null;
 
   return (
-    <div className="w-[275px] bg-white shadow-lg rounded-lg overflow-hidden">
+    <div
+      className="w-[275px] bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 cursor-pointer"
+      onClick={() => onCardClick(id)}
+    >
       <img src={image} alt={name} className="w-full h-[175px] object-cover rounded-t-lg" />
       <div className="p-4">
         <div className="flex justify-between items-center text-sm text-gray-500 mb-2">

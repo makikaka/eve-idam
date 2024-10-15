@@ -1,13 +1,10 @@
 'use client'
-import React, { Suspense, useState } from 'react';
+import React, { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { BaseFilters, EventFilters, initialVenueFilters, VenueFilters } from '@/types/EventFilters';
-import EventSkeletonLoader from '@/components/loaders/event-skeleton-loader';
+import { initialVenueFilters, VenueFilters } from '@/types/EventFilters';
 import EntityList from '../../components/lists/EntityList';
 import EntityFilters from '@/components/filter/EntityFilterComponent';
-import { artistsFilterTags, eventFilterCities, eventFilterTags, venueFilterTags } from '@/assets/EventFilters';
-import EventListDisplay from '@/components/lists/EventsListDisplay';
-import ArtistsListDisplay from '@/components/lists/ArtistsListDisplay';
+import { eventFilterCities, venueFilterTags } from '@/assets/EventFilters';
 import VenuesListDisplay from '@/components/lists/VenuesListDisplay';
 
 const VenuesPage = () => {
